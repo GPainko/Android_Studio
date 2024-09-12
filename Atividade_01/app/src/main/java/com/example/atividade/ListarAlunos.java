@@ -7,6 +7,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,9 +49,32 @@ public class ListarAlunos extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_principal, menu);
+
+        SearchView sv = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                procuraAluno(s);
+                return false;
+            }
+        });
         return true;
     }
 
+    public void procuraAluno(String nome){
+        alunosFiltrados.clear();
+        for(Aluno a : alunos){
+            if(a.getNome().toLowerCase().contains(nome.toLowerCase())){
+                alunosFiltrados.add(a);
+            }
+        }
+        listView.invalidateViews();
+    }
 
     public void cadastrar(MenuItem item){
         Intent it = new Intent(this, MainActivity.class);
