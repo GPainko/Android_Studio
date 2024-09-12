@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Aluno a = new Aluno();
         a.setNome(nome.getText().toString());
         a.setCpf(cpf.getText().toString());
-        a.setTelefone(telefone.getText().toString());
+        a.setTelephone(telefone.getText().toString());
 
         long id = dao.inserir(a);
         Toast.makeText(this,"Aluno inserido com id: " + id,Toast.LENGTH_SHORT).show();

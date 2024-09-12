@@ -6,7 +6,7 @@ public class Aluno implements Serializable {
     private Integer id;
     private String nome;
     private String cpf;
-    private String Telefone;
+    private String telephone;
 
     public Integer getId() {
         return id;
@@ -32,11 +32,17 @@ public class Aluno implements Serializable {
         this.cpf = cpf;
     }
 
-    public String getTelefone() {
-        return Telefone;
+    public String getTelephone() {
+        return telephone;
     }
 
-    public void setTelefone(String telefone) {
-        Telefone = telefone;
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    @Override
+    public String toString(){
+        String msg = (nome + "\n" + cpf +"\n" + telephone);
+        return msg;
     }
 }
