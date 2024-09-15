@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo de texto para inserir o nome do estudante -->
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:layout_margin="16dp"
+        android:inputType="textPersonName" />
+
+    <!-- Campo de texto para inserir o CPF do estudante -->
+    <EditText
+        android:id="@+id/edit_text_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPF"
+        android:layout_below="@id/edit_text_name"
+        android:layout_margin="16dp"
+        android:inputType="number" />
+
+    <!-- Campo de texto para inserir o telefone do estudante -->
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:layout_below="@id/edit_text_cpf"
+        android:layout_margin="16dp"
+        android:inputType="phone" />
+
+    <!-- Campo de texto para inserir a idade do estudante -->
+    <EditText
+        android:id="@+id/edit_text_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:layout_below="@id/edit_text_phone"
+        android:layout_margin="16dp"
+        android:inputType="number" />
+
+    <!-- Checkbox para indicar se o estudante está ativo ou inativo -->
+    <CheckBox
+        android:id="@+id/checkbox_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativo"
+        android:layout_below="@id/edit_text_age"
+        android:layout_margin="16dp" />
+
+    <!-- RadioGroup para escolher o tipo de curso do estudante -->
+    <RadioGroup
+        android:id="@+id/radio_group_course_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_active"
+        android:layout_margin="16dp">
+
+        <!-- Opção de RadioButton para Graduação -->
+        <RadioButton
+            android:id="@+id/radio_undergraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduação" />
+
+        <!-- Opção de RadioButton para Pós-graduação -->
+        <RadioButton
+            android:id="@+id/radio_postgraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pós-graduação" />
+    </RadioGroup>
+
+    <!-- Botão para salvar os detalhes do estudante -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_below="@id/radio_group_course_type"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

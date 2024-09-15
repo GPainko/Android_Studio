@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView para exibir o nome do estudante -->
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o CPF do estudante -->
+    <TextView
+        android:id="@+id/text_view_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o telefone do estudante -->
+    <TextView
+        android:id="@+id/text_view_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir a idade do estudante -->
+    <TextView
+        android:id="@+id/text_view_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para indicar se o estudante está ativo ou inativo -->
+    <TextView
+        android:id="@+id/text_view_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativo/Inativo"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o tipo de curso do estudante -->
+    <TextView
+        android:id="@+id/text_view_course_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Curso"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o número de faturas abertas associadas ao estudante -->
+    <TextView
+        android:id="@+id/text_view_invoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faturas Abertas: 0"
+        android:textSize="14sp"
+        android:textColor="#FF0000" />
+
+    <!-- LinearLayout para conter dinamicamente as faturas do estudante -->
+    <LinearLayout
+        android:id="@+id/invoices_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

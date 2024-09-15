@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView para exibir o nome do estudante -->
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o CPF do estudante -->
+    <TextView
+        android:id="@+id/text_view_cpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o telefone do estudante -->
+    <TextView
+        android:id="@+id/text_view_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir a idade do estudante -->
+    <TextView
+        android:id="@+id/text_view_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- TextView para exibir o número de faturas abertas associadas ao estudante -->
+    <TextView
+        android:id="@+id/text_view_invoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faturas Abertas: 0"
+        android:textSize="14sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botão para visualizar detalhes do estudante -->
+    <Button
+        android:id="@+id/button_view_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Detalhes"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botão flutuante para gerar uma nova fatura -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_generate_invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Gerar Fatura"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

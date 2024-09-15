@@ -1,0 +1,157 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.13.0] C:\Users\guipa\.gradle\caches\transforms-4\278a9b808b4179588646977873ecae28\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.0] C:\Users\guipa\.gradle\caches\transforms-4\278a9b808b4179588646977873ecae28\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.0] C:\Users\guipa\.gradle\caches\transforms-4\278a9b808b4179588646977873ecae28\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.myapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.0] C:\Users\guipa\.gradle\caches\transforms-4\278a9b808b4179588646977873ecae28\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0] C:\Users\guipa\.gradle\caches\transforms-4\278a9b808b4179588646977873ecae28\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:5:5-41:19
+18        android:allowBackup="true"
+18-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.0] C:\Users\guipa\.gradle\caches\transforms-4\278a9b808b4179588646977873ecae28\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.MyApplication" >
+29-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:13:9-51
+30
+31        <!-- Atividade principal -->
+32        <activity
+32-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:17:9-24:20
+33            android:name="com.example.myapplication.MainActivity"
+33-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:18:13-41
+34            android:exported="true" >
+34-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:19:13-36
+35            <intent-filter>
+35-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:20:13-23:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:21:17-69
+36-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:21:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:22:17-77
+38-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:22:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <!-- Atividade para adicionar/editar estudante -->
+43        <activity android:name="com.example.myapplication.AddEstudanteActivity" />
+43-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:27:9-58
+43-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:27:19-55
+44
+45        <!-- Atividade para adicionar fatura de pagamento -->
+46        <activity
+46-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:30:9-33:40
+47            android:name="com.example.myapplication.AddPagamentoActivity"
+47-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:31:13-49
+48            android:exported="false"
+48-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:33:13-37
+49            android:label="Adicionar Fatura" />
+49-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:32:13-45
+50
+51        <!-- Atividade para visualizar detalhes do aluno -->
+52        <activity
+52-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:36:9-39:40
+53            android:name="com.example.myapplication.StudentDetailsActivity"
+53-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:37:13-51
+54            android:exported="false"
+54-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:39:13-37
+55            android:label="Detalhes do Aluno" />
+55-->C:\Users\guipa\OneDrive\Documentos\Android_Studio\Trabalho01\app\src\main\AndroidManifest.xml:38:13-46
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+59            android:authorities="com.example.myapplication.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\guipa\.gradle\caches\transforms-4\32b97fe5394bfc3c8c279d3add8d0d45\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\guipa\.gradle\caches\transforms-4\7205d6621e920d716cad5cc16545168f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\guipa\.gradle\caches\transforms-4\7205d6621e920d716cad5cc16545168f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\guipa\.gradle\caches\transforms-4\7205d6621e920d716cad5cc16545168f\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+69                android:value="androidx.startup" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+70        </provider>
+71
+72        <receiver
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+74            android:directBootAware="false"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+75            android:enabled="true"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+76            android:exported="true"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+77            android:permission="android.permission.DUMP" >
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+80            </intent-filter>
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+83            </intent-filter>
+84            <intent-filter>
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+86            </intent-filter>
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\guipa\.gradle\caches\transforms-4\f3a968569c4cf0cc8a6c4325c0d95466\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+89            </intent-filter>
+90        </receiver>
+91    </application>
+92
+93</manifest>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo de texto para inserir o valor da fatura -->
+    <EditText
+        android:id="@+id/edit_text_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        android:layout_margin="16dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo de texto para inserir a data da fatura -->
+    <EditText
+        android:id="@+id/edit_text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        android:layout_below="@id/edit_text_value"
+        android:layout_margin="16dp"
+        android:inputType="date" />
+
+    <!-- Campo de texto para inserir a descrição da fatura -->
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        android:layout_below="@id/edit_text_date"
+        android:layout_margin="16dp"
+        android:inputType="textMultiLine" />
+
+    <!-- Botão para salvar os detalhes da fatura -->
+    <Button
+        android:id="@+id/button_save_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Fatura"
+        android:layout_below="@id/edit_text_description"
+        android:layout_margin="16dp" />
+</RelativeLayout>
