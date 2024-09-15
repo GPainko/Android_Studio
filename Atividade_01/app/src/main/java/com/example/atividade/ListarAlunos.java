@@ -61,6 +61,7 @@ public class ListarAlunos extends AppCompatActivity {
             public boolean onQueryTextChange(String s) {
                 procuraAluno(s);
                 return false;
+                
             }
         });
         return true;
